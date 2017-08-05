@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "844212570324",
+    "firebase_url": "https://mob-incrivel-2c4f1.firebaseio.com",
+    "project_id": "mob-incrivel-2c4f1",
+    "storage_bucket": "mob-incrivel-2c4f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844212570324:android:5aeaf4e774aba570",
+        "android_client_info": {
+          "package_name": "com.essejose.a13mobincrivelfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844212570324-sbdmb2kq8r321po52a2cdha3nj9kap58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABPTmwZHRaAqt9VDuy2xuyMnCWZbqZFKY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
