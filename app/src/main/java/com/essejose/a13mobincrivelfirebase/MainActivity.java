@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.ContentViewEvent;
+import com.crashlytics.android.answers.InviteEvent;
+import com.crashlytics.android.answers.SearchEvent;
 import com.crashlytics.android.answers.SignUpEvent;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.messaging.FirebaseMessaging;
@@ -35,6 +38,33 @@ public class MainActivity extends AppCompatActivity {
         mFirebaseAnalitics.logEvent("clickMe", params);
         // TODO: Move this to where you establish a user session
         logUser();
+
+    }
+
+    public  void contentView( View v){
+
+        Answers.getInstance().logContentView(new ContentViewEvent()
+                .putContentName("Answers setup process super easy!")
+                .putContentType("Technical documentation")
+                .putContentId("article-350"));
+
+    }
+
+
+    public void invite(View v){
+
+        Answers.getInstance().logInvite(new InviteEvent()
+                .putMethod("Twitter")
+                .putCustomAttribute("Custom String", "My String")
+                .putCustomAttribute("Custom Number", 25));
+
+    }
+
+    public void searchEvent(View v){
+        Answers.getInstance().logSearch(new SearchEvent()
+                .putQuery("mobile analytics")
+                .putCustomAttribute("Custom String", "My String")
+                .putCustomAttribute("Custom Number", 25));
 
     }
 

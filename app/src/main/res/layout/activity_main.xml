@@ -27,5 +27,36 @@
 
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickMe"
+        android:text="Click me"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="contentView"
+        android:text="Content View"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="invite"
+        android:text="Invite"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="searchEvent"
+        android:text="Search"
+
+        />
+
 
 </LinearLayout>
